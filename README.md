@@ -31,7 +31,9 @@ This project is dedicated to constructing a comprehensive **CRUD** (Create, Read
 ## Running The Code
 
 ## Credits
+> Special thanks to **JavaScript Mastery** for contributing to this project! 
 
 ## References
+- [Full Stack MERN Application](https://www.youtube.com/watch?v=ngc9gnGgUdA&list=PL6QREj8te1P7VSwhrMf3D3Xt4V6_SRkhu&pp=iAQB)
 
 ## More
