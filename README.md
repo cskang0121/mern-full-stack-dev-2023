@@ -1,7 +1,7 @@
 ## Project Description
 
 ### Technologies 
-This project is dedicated to constructing a comprehensive **CRUD** (Create, Read, Update, Delete) Social Media Platform, using the **MERN Stack** and other technologies as listed below:
+This project is dedicated to constructing a comprehensive **CRUD** (Create, Read, Update, Delete) Social Media Platform, using the **MERN** and other technologies as listed below:
 
 &nbsp;&nbsp;[`MongoDB`](https://www.mongodb.com)
 &nbsp;&nbsp;[`Express.js`](https://expressjs.com) 
