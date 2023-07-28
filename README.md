@@ -8,11 +8,14 @@ This project is dedicated to constructing a comprehensive **CRUD** (Create, Read
 &nbsp;&nbsp;[`React.js`](https://legacy.reactjs.org)
 &nbsp;&nbsp;[`Node.js`](https://nodejs.org)
 &nbsp;&nbsp;[`Redux`](https://react-redux.js.org)
+&nbsp;&nbsp;[`Heroku`](https://www.heroku.com/)
+&nbsp;&nbsp;[`Netlify`](https://www.netlify.com/?attr=homepage-modal)
 
 ### Main Concepts
 
-- Microservices enforces **REST** Principles
-- Authentication with **JWT** and **Google OAuth API**
+1. Full-stack development with **MERN** 
+2. Microservices enforces **REST** Principles
+3. Authentication with **JWT** and **Google OAuth API**
 
 ## Repository High Level Architecture
 
