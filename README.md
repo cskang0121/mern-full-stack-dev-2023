@@ -63,7 +63,7 @@ This project is dedicated to constructing a full-fledged **CRUD** (Create, Read,
    * `npm install body-parser` for parsing `POST` requests.
    * `npm install cors` for Cross-origin requests.
    * `npm install express` for Express backend framework.
-     * Add `"type" : "module"` in `package.json` to use the syntax : `import x from 'x';`.
+     * Add `"type" : "module"` in `package.json` to use the syntax : `import x from 'x'`.
      * Old syntax : `const x = require('x')`.
    * `npm install mongoose` for ODM (Object Data Modelling) in MongoDB. 
    * `npm install nodemon` for automatic update for any backend changes.
