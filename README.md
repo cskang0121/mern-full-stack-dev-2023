@@ -1,11 +1,11 @@
-# MERN Full-Stack Development 
+# MERN Full-Stack Development Summer 2023
 
 ## Individual Project Completed By
 * SMU Computer Science Year 3 – Kang Chin Shen (cskang.2020@scis.smu.edu.sg)
 
 ## Project Description
 ### Technologies 
-This project is dedicated to constructing a full-fledged **CRUD** (Create, Read, Update, Delete) Social Media Application, using the **MERN** and other technologies as listed below:
+This project is dedicated to constructing a full-fledged **CRUD** (Create, Read, Update, Delete) Blog Application, using the technologies as listed below:
 
 #### MERN Stack
 &nbsp;&nbsp;[`MongoDB`](https://www.mongodb.com)
@@ -16,7 +16,8 @@ This project is dedicated to constructing a full-fledged **CRUD** (Create, Read,
 #### Frameworks & Tools
 &nbsp;&nbsp;[`Mongoose`](https://mongoosejs.com/)
 &nbsp;&nbsp;[`Insomnia`](https://insomnia.rest/download)
-&nbsp;&nbsp;[`Vite`](https://vitejs.dev/)
+&nbsp;&nbsp;[`Vite.js`](https://vitejs.dev/)
+&nbsp;&nbsp;[`Material UI`](https://mui.com/)
 &nbsp;&nbsp;[`Redux`](https://react-redux.js.org)
 
 #### Hosting Services
@@ -33,6 +34,8 @@ This project is dedicated to constructing a full-fledged **CRUD** (Create, Read,
 | mern-full-stack-summer-project-2023                      # Root folder > ./
         | client                                           # Frontend code implemented using React.js
             | src
+                | components                               # React components
+                | images
         | server                                           # Backend code implemented using Express.js & Node.js
             | controllers
             | routes
@@ -51,6 +54,7 @@ This project is dedicated to constructing a full-fledged **CRUD** (Create, Read,
     * `npm install react-file-base64` for working with images in React.
     * `npm install redux` for state management.
     * `npm install redux-thunk` for asynchronous actions used in Redux.
+    * `npm install @mui/material @emotion/react @emotion/styled @fontsource/roboto` for styling React components.
 
 #### Generate the template code in [`./server`]()
 1. Run `cd server` to change directory into `./server` folder.
@@ -75,6 +79,7 @@ This project is dedicated to constructing a full-fledged **CRUD** (Create, Read,
 5. Connect to `MERN-Stack-DB` under `Deployment > Database > Connect to your application (Drivers)`.
 
 #### Schema Design
+1. The Schema `PostMessage` has the following definition:
 ```
 const postSchema = mongoose.Schema({
     title: String,
@@ -105,4 +110,6 @@ const PostMessage = mongoose.model('PostMessage', postSchema)
 * [Full Stack MERN Project](https://www.youtube.com/watch?v=ngc9gnGgUdA&list=PL6QREj8te1P7VSwhrMf3D3Xt4V6_SRkhu&pp=iAQB)
 * [Default Exports VS Named Exports](https://medium.com/@etherealm/named-export-vs-default-export-in-es6-affb483a0910)
 * [HTTP Status Codes](https://www.restapitutorial.com/httpstatuscodes.html)
+* [Material UI Templates](https://mui.com/material-ui/getting-started/templates/)
+  
 ## More
