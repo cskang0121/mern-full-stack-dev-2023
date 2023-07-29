@@ -1,5 +1,9 @@
-## Project Description
+# MERN Full-Stack Development 
 
+## Individual Project Completed By
+* SMU Computer Science Year 3 – Kang Chin Shen (cskang.2020@scis.smu.edu.sg)
+
+## Project Description
 ### Technologies 
 This project is dedicated to constructing a full-fledged **CRUD** (Create, Read, Update, Delete) Social Media Application, using the **MERN** and other technologies as listed below:
 
@@ -10,6 +14,8 @@ This project is dedicated to constructing a full-fledged **CRUD** (Create, Read,
 &nbsp;&nbsp;[`Node.js`](https://nodejs.org)
 
 #### Frameworks & Tools
+&nbsp;&nbsp;[`Mongoose`](https://mongoosejs.com/)
+&nbsp;&nbsp;[`Insomnia`](https://insomnia.rest/download)
 &nbsp;&nbsp;[`Vite`](https://vitejs.dev/)
 &nbsp;&nbsp;[`Redux`](https://react-redux.js.org)
 
@@ -19,15 +25,18 @@ This project is dedicated to constructing a full-fledged **CRUD** (Create, Read,
 
 #### Main Concepts
 1. Full-stack development with **MERN** 
-2. Microservices enforces **REST** Principles
+2. Microservices enforce **REST** Principles
 3. Authentication with **JWT** and **Google OAuth API**
 
 ## Repository High Level Architecture
 ```
 | mern-full-stack-summer-project-2023                      # Root folder > ./
-    | client
-    | server
-    # Sub folder 3 ...
+        | client                                           # Frontend code implemented using React.js
+            | src
+        | server                                           # Backend code implemented using Express.js & Node.js
+            | controllers
+            | routes
+            index.js
 ```
 
 #### Generate the template code in [`./client`]()
@@ -52,18 +61,48 @@ This project is dedicated to constructing a full-fledged **CRUD** (Create, Read,
    * `npm install express` for Express backend framework.
      * Add `"type" : "module"` in `package.json` to use the syntax : `import x from 'x';`.
      * Old syntax : `const x = require('x')`.
-   * `npm install mongoose` for ODM (Object Data Modelling) in MongoDB.
+   * `npm install mongoose` for ODM (Object Data Modelling) in MongoDB. 
    * `npm install nodemon` for automatic update for any backend changes.
       * Replace the `"scripts" > "test"` in `package.json` to `"scripts" > "start" : "nodemon index.js"`.
 
 ## Database Design
+#### Connection To MongoDB Cluster
+1. Register an account [here](https://www.mongodb.com/cloud/atlas/register).
+2. Create a new cluster free of charge with the following configuration:
+![Screenshot 2023-07-29 at 9 12 20 PM](https://github.com/cskang0121/mern-full-stack-summer-project-2023/assets/79074359/e9b4392a-467d-47a3-80ba-19c4a714fd69)
+3. Create a database user under `Security > Quickstart`.
+4. Add IP address of the local machine under `Security > Network Access`.
+5. Connect to `MERN-Stack-DB` under `Deployment > Database > Connect to your application (Drivers)`.
 
+#### Schema Design
+```
+const postSchema = mongoose.Schema({
+    title: String,
+    message: String,
+    creator: String,
+    tags: [String],
+    selectedFile: String,   // An image is converted into string format using react-file-base64
+    likeCount: {
+        type: Number,
+        default: 0
+    },
+    createdAt: {
+        type: Date,
+        default: new Date()
+    }
+})
+
+const PostMessage = mongoose.model('PostMessage', postSchema)
+```
+
+   
 ## Running The Code
 
 ## Credits
 > Special thanks to **JavaScript Mastery** for contributing to this project! 
 
 ## References
-- [Full Stack MERN Project](https://www.youtube.com/watch?v=ngc9gnGgUdA&list=PL6QREj8te1P7VSwhrMf3D3Xt4V6_SRkhu&pp=iAQB)
-
+* [Full Stack MERN Project](https://www.youtube.com/watch?v=ngc9gnGgUdA&list=PL6QREj8te1P7VSwhrMf3D3Xt4V6_SRkhu&pp=iAQB)
+* [Default Exports VS Named Exports](https://medium.com/@etherealm/named-export-vs-default-export-in-es6-affb483a0910)
+* [HTTP Status Codes](https://www.restapitutorial.com/httpstatuscodes.html)
 ## More
