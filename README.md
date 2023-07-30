@@ -86,7 +86,7 @@ const postSchema = mongoose.Schema({
     message: String,
     creator: String,
     tags: [String],
-    selectedFile: String,   // An image is converted into string format using react-file-base64
+    selectedFile: String,   # An image is converted into string format using react-file-base64
     likeCount: {
         type: Number,
         default: 0
