@@ -1,4 +1,4 @@
-# MERN Full-Stack Development 2023 [Personal Project]
+# MERN Full-Stack Development 2023 > Personal Project 💻
 
 ## Individual Project Completed By
 * SMU Computer Science Year 3 – Kang Chin Shen (cskang.2020@scis.smu.edu.sg)
